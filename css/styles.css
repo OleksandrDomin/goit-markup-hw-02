@@ -7,88 +7,84 @@
     --black-color: #000000;
     --white-cololr: #FFFFFF;
     --team-section-color: #F5F4FA;
+    --info-footer-color: #ffffff99;
+    --btn-hover-color: #188CE8;
 
 
 }
 body {
-font-family: 'Roboto', 'Times New Roman', serif;
-letter-spacing: 0.03em;
+font-family: 'Roboto', sans-serif;
 color: var(--text-title-color);
 }
 
-li {
-    list-style-type: none;
+li 
+{
+list-style-type: none;
 }
 
-
-.link {
-    text-decoration: none;
-}
-
+.link-nav.current 
+{
+color: var(--hover-color);
+}   
 
 /**header section*/
 /*logo*/
 .header 
 {
 background-color: var(--white-cololr);
-letter-spacing: 0.02em;
 }
 
-.logo-web-header
+.header-logo
 {
 font-family: 'Raleway';
 font-weight: 700;
 font-size: 26px;
-line-height: 1.2;
-color: var(--hover-color);
-letter-spacing: 0.03em;
-}
-
-.logo-studio-header 
-{
-font-family: 'Raleway';
-font-weight: 700;
-font-size: 26px;
-line-height: 1.2;
+line-height: 1.19;
 color: var(--black-color);
 letter-spacing: 0.03em;
+text-decoration: none;
 }
 
-.nav-link  a 
+.logo-web-header 
+{
+color: var(--hover-color);
+}
+
+.link-nav
 {
 font-weight: 500;
 font-size: 14px;
-line-height: 0.9;
+line-height: 1.14;
 color: var(--text-title-color);
 letter-spacing: 0.02em;
+text-decoration: none;
 }
 
-.nav-link a:hover, 
-.nav-link a:active, 
-.nav-link a:focus 
+.link-nav:hover, 
+.link-nav:active, 
+.link-nav:focus 
 {
 font-weight: 500;
 font-size: 14px;
 line-height: 0.9;
 color: var(--hover-color);
-text-decoration: underline;
 }
 
-.header-info a 
+.link-info
 {
 font-weight: 500;
 font-size: 14px;
-line-height: 0.9;
+line-height: 1.14;
 color: var(--text-articl-color);
 letter-spacing: 0.02em;
+    text-decoration: none;
 }
 
-.header-info a:hover, 
-.header-info a:active, 
-.header-info a:focus 
+.link-info:hover, 
+.link-info:active, 
+.link-info:focus 
 {
 color: var(--hover-color);
-text-decoration: underline;
 }
 
 /**footer*/
@@ -96,46 +92,55 @@ text-decoration: underline;
     background-color: var(--footer-color);
 }
 
-.footer>address {
-    font-style: normal;
+.footer-logo 
+{
+    font-family: 'Raleway';
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 1.19;
+        letter-spacing: 0.03em;
+        text-decoration: none;
+        font-style: normal;
 }
 
-.logo-web-footer {
-    font-family: 'Raleway';
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.2;
-    color: var(--hover-color);
+.logo-web-footer 
+{
+color: var(--hover-color);
 }
 
-.logo-studio-footer {
-    font-family: 'Raleway';
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.2;
-    color: var(--white-cololr);
+.logo-studio-footer 
+{
+color: var(--white-cololr);
 }
+
 
 .address-map {
     font-weight: 400;
     font-size: 14px;
     line-height: 1.7;
     color: var(--white-cololr);
+    font-style: normal;
+    text-decoration: none;
 }
 
 .address-link {
-    font-family: inherit;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.7;
-    color: rgba(255, 255, 255, 0.6);
+    color: var(--info-footer-color);
+    font-style: normal;
+    text-decoration: none;
 }
 
-.footer a:hover,
-.footer a:active,
-.footer a:focus {
-    color: var(--hover-color);
-    text-decoration: underline;
+.address-link:hover,
+.address-map:hover,
+.address-link:active,
+.address-map:active,
+.address-link:focus,
+.address-map:focus
+{
+color: var(--hover-color);
+font-style: normal;
 }
 
 /**Webstudio page*/ 
@@ -143,21 +148,19 @@ text-decoration: underline;
 .hero 
 {
 background-color: var(--footer-color);
+list-style-type: none;
 }
 .hero-title 
 {
 font-weight: 900;
 font-size: 44px;
-line-height: 1.4;
+line-height: 1.36;
 color: var(--white-cololr);
 letter-spacing: 0.06em;
 }
+
 .btn-hero 
 {
-width: 216px;
-height: 50px;
-left: 692px;
-top: 430px;
 background: var(--hover-color);
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 border-radius: 4px;
@@ -165,10 +168,20 @@ border: none;
 font-family: inherit;
 font-weight: 700;
 font-size: 16px;
-line-height: 1.9;       
+line-height: 1.88;       
 color: var(--white-cololr);
 letter-spacing: 0.06em;
 cursor: pointer;
+}
+.btn-hero:hover
+{
+    background-color: var(--btn-hover-color);
+}
+
+.btn-hero:active 
+{
+    border-color: var(--hover-color);
+    background-color: var(--hover-color);
 }
 
 /*our benefits section*/
@@ -186,71 +199,90 @@ clip-path: inset(50%);
 margin: -1px;
 }
 
-.benefits h3 
+.benefits
+{
+list-style-type: none;
+}
+
+.benefits-title
 {
 font-weight: 700;
 font-size: 14px;
-line-height: 1.2;
+line-height: 1.14;
 text-transform: uppercase;
 color: var(--text-title-color);
+letter-spacing: 0.03em;
 }
 
-.benefits p 
+.benefits-texts
 {
 font-weight: 400;
 font-size: 14px;
-line-height: 1.7;
+line-height: 1.71;
 color: var(--text-articl-color);
+letter-spacing: 0.03em;
 }
 
 /*our works section*/
-.team li 
+.works 
 {
-background-color: var(--white-cololr);
+list-style-type: none;
 }
-
-.works h2 
+.works-title
 {
 font-weight: 700;
 font-size: 36px;
-line-height: 1.2;
+line-height: 1.16;
 color: var(--text-title-color);
+letter-spacing: 0.03em;
 }
 
 /*our team section*/
 .team
 {
 background-color: var(--team-section-color);
+list-style-type: none;
 }
 
-.team h2 
+.team-section {
+    background-color: var(--white-cololr);
+}
+
+.team-title
 {
 font-weight: 700;
 font-size: 36px;
-line-height: 1.2;
+line-height: 1.16;
 color: var(--text-title-color);
+letter-spacing: 0.03em;
 }
 
-.team h3 
+.team-name
 {
 font-weight: 500;
 font-size: 16px;
-line-height: 1.2;
+line-height: 1.18;
 color: var(--text-title-color);
 text-align: center;
+letter-spacing: 0.03em;
 }
 
-.team p 
+.team-text
 {
 font-weight: 400;
 font-size: 16px;
-line-height: 1.2;
+line-height: 1.18;
 color: var(--text-articl-color);
 text-align: center;
+letter-spacing: 0.03em;
 }
 
 /**Portfolio page**/
 /*Sorting btn*/
+.btn-group
+{
+list-style-type: none;
+}
 .btn-links
 {
 cursor: pointer;
@@ -260,6 +292,7 @@ font-family: inherit;
 font-weight: 500;
 font-size: 16px;
 line-height: 1.6;
+letter-spacing: 0.03em;
 }
 
 .btn-links:hover,
@@ -270,7 +303,11 @@ background-color: var(--hover-color);
 color: var(--white-cololr);
 }
 
-.examples h3 
+.examples 
+{
+list-style-type: none;
+}
+.examples-title
 {
 font-size: 18px;
 font-weight: 700;
@@ -279,10 +316,11 @@ letter-spacing: 0.06em;
 color: var(--text-title-color);
 }
 
-.examples p 
+.examples-text
 {
-font-weight: 400
+font-weight: 400;
 font-size: 16px;
-line-height: 30px;
+line-height: 1.87;
 color: var(--text-articl-color);
+letter-spacing: 0.03em;
 }
