@@ -101,18 +101,13 @@ color: var(--hover-color);
         letter-spacing: 0.03em;
         text-decoration: none;
         font-style: normal;
+        color: var(--white-cololr);
 }
 
 .logo-web-footer 
 {
 color: var(--hover-color);
 }
-
-.logo-studio-footer 
-{
-color: var(--white-cololr);
-}
-
 
 .address-map {
     font-weight: 400;
@@ -157,6 +152,7 @@ font-size: 44px;
 line-height: 1.36;
 color: var(--white-cololr);
 letter-spacing: 0.06em;
+text-transform: uppercase;
 }
 
 .btn-hero 
@@ -291,7 +287,7 @@ border-radius: 4px;
 font-family: inherit;
 font-weight: 500;
 font-size: 16px;
-line-height: 1.6;
+line-height: 1.62;
 letter-spacing: 0.03em;
 }
 
